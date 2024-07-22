@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option go_package = "notifications/proto";
+
+package notification_pb;
+
+message Message {
+  int32 title = 1;
+  string body = 2;
+}
+
+message User {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Notification {
+  int32 id = 1;
+  User user = 2;
+  Message message = 3;
+}
+
+service NotificationService {
+  // Envia uma notificação para o usuário
+  rpc Send(Notification) returns (Notification) {}
+
+  // Lista todas as notificações do usuário
+  rpc List(User) returns (stream Notification) {}
+
+  // Marca uma ou mais notificações como lidas
+  rpc MarkAsRead(stream Notification) returns (stream Notification) {}
+
+  // Marca todas as notificações como lidas
+  rpc MarkAllAsRead(stream Notification) returns (stream Notification) {}
+}
