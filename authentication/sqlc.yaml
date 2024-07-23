@@ -1,6 +1,5 @@
-version: "1"
+version: "2"
 packages:
-  - name: db
     path: sqlc/models
     queries: "sqlc/queries"
     schema: "sqlc/schema"
