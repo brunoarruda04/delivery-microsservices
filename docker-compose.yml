@@ -18,6 +18,20 @@ services:
       - "8080:8080"
       - "8081:8081"
 
+  authentication-service:
+    build:
+      context: ./authentication
+      dockerfile: authentication.dockerfile
+    container_name: authentication-service
+    env_file:
+      - ./authentication/.env
+    depends_on:
+      - postgres
+    ports:
+      - "8082:8080"
+      - "8083:6831"
+      - "8084:9090"
+
 volumes:
   mongo_data:
   mysql_data:
