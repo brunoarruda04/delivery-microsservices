@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"net/http"
-	"restaurant/core/restaurant/endpoint"
+	"restaurant/internal/restaurant/endpoint"
 
 	kitHttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"

@@ -1,8 +1,8 @@
 package metrics
 
 import (
-	"restaurant/core/restaurant/domain"
-	"restaurant/core/restaurant/service"
+	"restaurant/internal/restaurant/domain"
+	"restaurant/internal/restaurant/service"
 	"time"
 
 	"github.com/go-kit/kit/metrics/prometheus"

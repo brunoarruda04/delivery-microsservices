@@ -3,8 +3,8 @@ package tracing
 import (
 	"io"
 	"log"
-	"restaurant/core/restaurant/domain"
-	"restaurant/core/restaurant/service"
+	"restaurant/internal/restaurant/domain"
+	"restaurant/internal/restaurant/service"
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"

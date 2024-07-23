@@ -2,7 +2,7 @@ package service
 
 import (
 	"errors"
-	"restaurant/core/restaurant/domain"
+	"restaurant/internal/restaurant/domain"
 
 	"github.com/google/uuid"
 )

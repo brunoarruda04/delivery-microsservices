@@ -3,8 +3,8 @@ package endpoint
 
 import (
 	"context"
-	"restaurant/core/restaurant/domain"
-	"restaurant/core/restaurant/service"
+	"restaurant/internal/restaurant/domain"
+	"restaurant/internal/restaurant/service"
 
 	"github.com/go-kit/kit/endpoint"
 )

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"errors"
 	"os"
-	"restaurant/core/restaurant/domain"
+	"restaurant/internal/restaurant/domain"
 
 	_ "github.com/jackc/pgx/v5/stdlib"
 )
